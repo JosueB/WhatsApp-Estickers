@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="F0h-Aj-giL">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="F0h-Aj-giL">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DzO-s8-lBe">
                                     <size key="itemSize" width="349" height="250"/>
@@ -36,20 +35,23 @@
                                             <rect key="frame" x="0.0" y="0.0" width="349" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hawaiiResort" translatesAutoresizingMaskIntoConstraints="NO" id="P3u-Ky-0LN">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="hawaiiResort" translatesAutoresizingMaskIntoConstraints="NO" id="P3u-Ky-0LN">
                                                     <rect key="frame" x="0.0" y="0.0" width="349" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsB-oe-Ldl">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsB-oe-Ldl">
                                                     <rect key="frame" x="20" y="143" width="309" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="OKP-1E-YMb"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A beautiful beach resort off the coast of Hawaii" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOh-KE-yYJ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A beautiful beach resort off the coast of Hawaii" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOh-KE-yYJ">
                                                     <rect key="frame" x="20" y="181" width="309" height="49"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="49" id="ZyV-BN-JuJ"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -57,6 +59,18 @@
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="hOh-KE-yYJ" firstAttribute="top" secondItem="EsB-oe-Ldl" secondAttribute="bottom" constant="8" symbolic="YES" id="169-q9-30O"/>
+                                            <constraint firstItem="P3u-Ky-0LN" firstAttribute="centerX" secondItem="EsB-oe-Ldl" secondAttribute="centerX" id="AQr-fl-Ves"/>
+                                            <constraint firstItem="P3u-Ky-0LN" firstAttribute="leading" secondItem="K8S-8w-2ca" secondAttribute="leading" id="IdE-IK-2zW"/>
+                                            <constraint firstItem="P3u-Ky-0LN" firstAttribute="top" secondItem="K8S-8w-2ca" secondAttribute="top" id="LBZ-Ex-TTa"/>
+                                            <constraint firstAttribute="trailing" secondItem="P3u-Ky-0LN" secondAttribute="trailing" id="NXZ-3R-HpL"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="hOh-KE-yYJ" secondAttribute="bottom" constant="20" id="PiS-2u-8fO"/>
+                                            <constraint firstItem="EsB-oe-Ldl" firstAttribute="leading" secondItem="hOh-KE-yYJ" secondAttribute="leading" id="YsY-k2-pX6"/>
+                                            <constraint firstItem="EsB-oe-Ldl" firstAttribute="top" secondItem="P3u-Ky-0LN" secondAttribute="bottom" constant="15" id="rPU-5H-dil"/>
+                                            <constraint firstItem="EsB-oe-Ldl" firstAttribute="leading" secondItem="K8S-8w-2ca" secondAttribute="leadingMargin" constant="4" id="v7N-lt-FPc"/>
+                                            <constraint firstItem="EsB-oe-Ldl" firstAttribute="trailing" secondItem="hOh-KE-yYJ" secondAttribute="trailing" id="y8n-GB-kMt"/>
+                                        </constraints>
                                         <size key="customSize" width="349" height="250"/>
                                         <connections>
                                             <outlet property="locationDescription" destination="hOh-KE-yYJ" id="Pye-ml-Pfk"/>
@@ -72,13 +86,19 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="F0h-Aj-giL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0Fk-sn-9Mi"/>
+                            <constraint firstAttribute="trailing" secondItem="F0h-Aj-giL" secondAttribute="trailing" id="cZZ-HI-P7B"/>
+                            <constraint firstItem="F0h-Aj-giL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="skM-do-3DD"/>
+                            <constraint firstItem="F0h-Aj-giL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="v0L-56-xx1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="WhatsApp Estickers" id="e0y-13-iaz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="117.39130434782609"/>
+            <point key="canvasLocation" x="1053.5999999999999" y="116.49175412293854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Oh-8U-pCa">
