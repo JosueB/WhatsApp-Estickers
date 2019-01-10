@@ -1,0 +1,6 @@
+framework module Pods_WhatsApp_EstickersTests {
+  umbrella header "Pods-WhatsApp EstickersTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
