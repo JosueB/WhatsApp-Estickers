@@ -27,6 +27,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return 3
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailViewController = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        self.navigationController?.pushViewController(detailViewController, animated: true)
+    }
+    
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
