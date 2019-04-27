@@ -8,7 +8,18 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    @IBOutlet weak var mCollectionView: UICollectionView!
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
