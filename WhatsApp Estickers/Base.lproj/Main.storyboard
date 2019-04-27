@@ -128,21 +128,21 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="516"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="10" id="i3l-fS-Ddi">
-                                    <size key="itemSize" width="185" height="185"/>
+                                    <size key="itemSize" width="127" height="123"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="2" minY="2" maxX="0.0" maxY="2"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="detailCell" id="bji-bS-okx" customClass="DetailViewCell" customModule="WhatsApp_Estickers" customModuleProvider="target">
-                                        <rect key="frame" x="96" y="2" width="185" height="185"/>
+                                        <rect key="frame" x="2" y="2" width="127" height="123"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="185" height="185"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="127" height="123"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R6Z-8L-8jd">
-                                                    <rect key="frame" x="15" y="41" width="155" height="102"/>
+                                                    <rect key="frame" x="10" y="17" width="107" height="89"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -154,6 +154,7 @@
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="1Rd-Xu-PBM" id="6dg-vQ-9uh"/>
+                                    <outlet property="delegate" destination="1Rd-Xu-PBM" id="5kb-5T-ieq"/>
                                 </connections>
                             </collectionView>
                         </subviews>
