@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68687831DC453BCF7036D845 /* Pods_WhatsApp_EstickersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E458AC05E4D9AC1B773DD5 /* Pods_WhatsApp_EstickersUITests.framework */; };
 		9040A6271FAE741200D89A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040A6261FAE741200D89A53 /* AppDelegate.swift */; };
 		9040A6291FAE741200D89A53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040A6281FAE741200D89A53 /* ViewController.swift */; };
 		9040A62C1FAE741200D89A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9040A62A1FAE741200D89A53 /* Main.storyboard */; };
@@ -15,10 +14,21 @@
 		9040A6311FAE741200D89A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9040A62F1FAE741200D89A53 /* LaunchScreen.storyboard */; };
 		9040A6551FAE7A6600D89A53 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040A6541FAE7A6600D89A53 /* CollectionViewCell.swift */; };
 		9DAF7ED8F16D4EED1CDBE86D /* Pods_WhatsApp_Estickers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF5B8C13EA45C1C2740AAF5 /* Pods_WhatsApp_Estickers.framework */; };
-		9ED0091D9B4B56E8963FD445 /* Pods_WhatsApp_EstickersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95ADD67C07591F1C9CD707B8 /* Pods_WhatsApp_EstickersTests.framework */; };
 		CAD2CC0921E8337D00B7B829 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD2CC0821E8337D00B7B829 /* DetailViewController.swift */; };
 		CAD2E66C2273FD0D001BF5AF /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD2E66B2273FD0D001BF5AF /* DetailViewCell.swift */; };
 		CAD2E66E22740628001BF5AF /* EstickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD2E66D22740628001BF5AF /* EstickerItem.swift */; };
+		CAF10F3F229F8F3C00674AD4 /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF10F35229F8F3C00674AD4 /* YYFrameImage.m */; };
+		CAF10F40229F8F3C00674AD4 /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF10F36229F8F3C00674AD4 /* YYImageCoder.m */; };
+		CAF10F41229F8F3C00674AD4 /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF10F37229F8F3C00674AD4 /* YYSpriteSheetImage.m */; };
+		CAF10F42229F8F3C00674AD4 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF10F38229F8F3C00674AD4 /* YYAnimatedImageView.m */; };
+		CAF10F43229F8F3C00674AD4 /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF10F3E229F8F3C00674AD4 /* YYImage.m */; };
+		CAF10F45229F8F4E00674AD4 /* Limits.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF10F44229F8F4E00674AD4 /* Limits.swift */; };
+		CAF10F47229F8F5600674AD4 /* StickerPackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF10F46229F8F5600674AD4 /* StickerPackManager.swift */; };
+		CAF10F49229F8F6100674AD4 /* StickerPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF10F48229F8F6100674AD4 /* StickerPack.swift */; };
+		CAF10F4B229F8F6E00674AD4 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF10F4A229F8F6E00674AD4 /* Sticker.swift */; };
+		CAF10F4D229F8F7A00674AD4 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF10F4C229F8F7A00674AD4 /* ImageData.swift */; };
+		CAF10F4F229F8F8700674AD4 /* Interoperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF10F4E229F8F8700674AD4 /* Interoperability.swift */; };
+		CAF10F51229F8F9300674AD4 /* WebPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF10F50229F8F9300674AD4 /* WebPManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11E458AC05E4D9AC1B773DD5 /* Pods_WhatsApp_EstickersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsApp_EstickersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE2DAA3AA979787D1539537 /* Pods-WhatsApp Estickers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp Estickers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsApp Estickers/Pods-WhatsApp Estickers.debug.xcconfig"; sourceTree = "<group>"; };
-		5561B4FB0EF1B23680C1924B /* Pods-WhatsApp EstickersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp EstickersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsApp EstickersUITests/Pods-WhatsApp EstickersUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		762BEEEE11655DE1283BA881 /* Pods-WhatsApp EstickersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp EstickersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsApp EstickersTests/Pods-WhatsApp EstickersTests.release.xcconfig"; sourceTree = "<group>"; };
 		9040A6231FAE741200D89A53 /* WhatsApp Estickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhatsApp Estickers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9040A6261FAE741200D89A53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9040A6281FAE741200D89A53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,14 +60,29 @@
 		9040A6371FAE741200D89A53 /* WhatsApp EstickersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WhatsApp EstickersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9040A6421FAE741200D89A53 /* WhatsApp EstickersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WhatsApp EstickersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9040A6541FAE7A6600D89A53 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		95ADD67C07591F1C9CD707B8 /* Pods_WhatsApp_EstickersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsApp_EstickersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		981FE7D92076828217CECC01 /* Pods-WhatsApp Estickers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp Estickers.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsApp Estickers/Pods-WhatsApp Estickers.release.xcconfig"; sourceTree = "<group>"; };
 		ABF5B8C13EA45C1C2740AAF5 /* Pods_WhatsApp_Estickers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsApp_Estickers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD2CC0821E8337D00B7B829 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CAD2E66B2273FD0D001BF5AF /* DetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
 		CAD2E66D22740628001BF5AF /* EstickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstickerItem.swift; sourceTree = "<group>"; };
-		E7B9C27265E81FDD5F3ED786 /* Pods-WhatsApp EstickersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp EstickersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsApp EstickersUITests/Pods-WhatsApp EstickersUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F69F3FC462BD32AC8F0B67EA /* Pods-WhatsApp EstickersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp EstickersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsApp EstickersTests/Pods-WhatsApp EstickersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CAF10F34229F8F3B00674AD4 /* WhatsApp Estickers-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhatsApp Estickers-Bridging-Header.h"; sourceTree = "<group>"; };
+		CAF10F35229F8F3C00674AD4 /* YYFrameImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YYFrameImage.m; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/YYFrameImage.m; sourceTree = "<group>"; };
+		CAF10F36229F8F3C00674AD4 /* YYImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YYImageCoder.m; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/YYImageCoder.m; sourceTree = "<group>"; };
+		CAF10F37229F8F3C00674AD4 /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YYSpriteSheetImage.m; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/YYSpriteSheetImage.m; sourceTree = "<group>"; };
+		CAF10F38229F8F3C00674AD4 /* YYAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YYAnimatedImageView.m; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/YYAnimatedImageView.m; sourceTree = "<group>"; };
+		CAF10F39229F8F3C00674AD4 /* YYAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YYAnimatedImageView.h; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/YYAnimatedImageView.h; sourceTree = "<group>"; };
+		CAF10F3A229F8F3C00674AD4 /* YYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YYImage.h; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/YYImage.h; sourceTree = "<group>"; };
+		CAF10F3B229F8F3C00674AD4 /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YYSpriteSheetImage.h; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/YYSpriteSheetImage.h; sourceTree = "<group>"; };
+		CAF10F3C229F8F3C00674AD4 /* YYImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YYImageCoder.h; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/YYImageCoder.h; sourceTree = "<group>"; };
+		CAF10F3D229F8F3C00674AD4 /* YYFrameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YYFrameImage.h; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/YYFrameImage.h; sourceTree = "<group>"; };
+		CAF10F3E229F8F3C00674AD4 /* YYImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YYImage.m; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/YYImage.m; sourceTree = "<group>"; };
+		CAF10F44229F8F4E00674AD4 /* Limits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Limits.swift; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/Limits.swift; sourceTree = "<group>"; };
+		CAF10F46229F8F5600674AD4 /* StickerPackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickerPackManager.swift; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/StickerPackManager.swift; sourceTree = "<group>"; };
+		CAF10F48229F8F6100674AD4 /* StickerPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickerPack.swift; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/StickerPack.swift; sourceTree = "<group>"; };
+		CAF10F4A229F8F6E00674AD4 /* Sticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sticker.swift; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/Sticker.swift; sourceTree = "<group>"; };
+		CAF10F4C229F8F7A00674AD4 /* ImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageData.swift; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/ImageData.swift; sourceTree = "<group>"; };
+		CAF10F4E229F8F8700674AD4 /* Interoperability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interoperability.swift; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/Interoperability.swift; sourceTree = "<group>"; };
+		CAF10F50229F8F9300674AD4 /* WebPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebPManager.swift; path = ../../../Tutorials/stickers/iOS/WAStickersThirdParty/WebPManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ED0091D9B4B56E8963FD445 /* Pods_WhatsApp_EstickersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +105,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68687831DC453BCF7036D845 /* Pods_WhatsApp_EstickersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				ABF5B8C13EA45C1C2740AAF5 /* Pods_WhatsApp_Estickers.framework */,
-				95ADD67C07591F1C9CD707B8 /* Pods_WhatsApp_EstickersTests.framework */,
-				11E458AC05E4D9AC1B773DD5 /* Pods_WhatsApp_EstickersUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,10 +124,6 @@
 			children = (
 				1BE2DAA3AA979787D1539537 /* Pods-WhatsApp Estickers.debug.xcconfig */,
 				981FE7D92076828217CECC01 /* Pods-WhatsApp Estickers.release.xcconfig */,
-				F69F3FC462BD32AC8F0B67EA /* Pods-WhatsApp EstickersTests.debug.xcconfig */,
-				762BEEEE11655DE1283BA881 /* Pods-WhatsApp EstickersTests.release.xcconfig */,
-				5561B4FB0EF1B23680C1924B /* Pods-WhatsApp EstickersUITests.debug.xcconfig */,
-				E7B9C27265E81FDD5F3ED786 /* Pods-WhatsApp EstickersUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -140,13 +154,31 @@
 				9040A6261FAE741200D89A53 /* AppDelegate.swift */,
 				9040A6281FAE741200D89A53 /* ViewController.swift */,
 				9040A62A1FAE741200D89A53 /* Main.storyboard */,
+				CAF10F44229F8F4E00674AD4 /* Limits.swift */,
 				CAD2E66D22740628001BF5AF /* EstickerItem.swift */,
 				CAD2E66B2273FD0D001BF5AF /* DetailViewCell.swift */,
 				CAD2CC0821E8337D00B7B829 /* DetailViewController.swift */,
+				CAF10F48229F8F6100674AD4 /* StickerPack.swift */,
+				CAF10F4C229F8F7A00674AD4 /* ImageData.swift */,
+				CAF10F4E229F8F8700674AD4 /* Interoperability.swift */,
+				CAF10F4A229F8F6E00674AD4 /* Sticker.swift */,
+				CAF10F50229F8F9300674AD4 /* WebPManager.swift */,
+				CAF10F46229F8F5600674AD4 /* StickerPackManager.swift */,
 				9040A6541FAE7A6600D89A53 /* CollectionViewCell.swift */,
 				9040A62D1FAE741200D89A53 /* Assets.xcassets */,
 				9040A62F1FAE741200D89A53 /* LaunchScreen.storyboard */,
 				9040A6321FAE741200D89A53 /* Info.plist */,
+				CAF10F39229F8F3C00674AD4 /* YYAnimatedImageView.h */,
+				CAF10F38229F8F3C00674AD4 /* YYAnimatedImageView.m */,
+				CAF10F3D229F8F3C00674AD4 /* YYFrameImage.h */,
+				CAF10F35229F8F3C00674AD4 /* YYFrameImage.m */,
+				CAF10F3A229F8F3C00674AD4 /* YYImage.h */,
+				CAF10F3E229F8F3C00674AD4 /* YYImage.m */,
+				CAF10F3C229F8F3C00674AD4 /* YYImageCoder.h */,
+				CAF10F36229F8F3C00674AD4 /* YYImageCoder.m */,
+				CAF10F3B229F8F3C00674AD4 /* YYSpriteSheetImage.h */,
+				CAF10F37229F8F3C00674AD4 /* YYSpriteSheetImage.m */,
+				CAF10F34229F8F3B00674AD4 /* WhatsApp Estickers-Bridging-Header.h */,
 			);
 			path = "WhatsApp Estickers";
 			sourceTree = "<group>";
@@ -176,7 +208,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9040A64E1FAE741300D89A53 /* Build configuration list for PBXNativeTarget "WhatsApp EstickersTests" */;
 			buildPhases = (
-				FEF684E5BB24F82ACA6E557E /* [CP] Check Pods Manifest.lock */,
 				9040A6331FAE741200D89A53 /* Sources */,
 				9040A6341FAE741200D89A53 /* Frameworks */,
 				9040A6351FAE741200D89A53 /* Resources */,
@@ -195,7 +226,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9040A6511FAE741300D89A53 /* Build configuration list for PBXNativeTarget "WhatsApp EstickersUITests" */;
 			buildPhases = (
-				2F16C34DFC59959975A40623 /* [CP] Check Pods Manifest.lock */,
 				9040A63E1FAE741200D89A53 /* Sources */,
 				9040A63F1FAE741200D89A53 /* Frameworks */,
 				9040A6401FAE741200D89A53 /* Resources */,
@@ -222,6 +252,7 @@
 				TargetAttributes = {
 					9040A6221FAE741200D89A53 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					9040A6361FAE741200D89A53 = {
@@ -284,28 +315,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2F16C34DFC59959975A40623 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WhatsApp EstickersUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7078797556501AF17C34822C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,28 +337,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FEF684E5BB24F82ACA6E557E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WhatsApp EstickersTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -357,12 +344,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAF10F47229F8F5600674AD4 /* StickerPackManager.swift in Sources */,
+				CAF10F43229F8F3C00674AD4 /* YYImage.m in Sources */,
+				CAF10F45229F8F4E00674AD4 /* Limits.swift in Sources */,
 				9040A6291FAE741200D89A53 /* ViewController.swift in Sources */,
+				CAF10F4B229F8F6E00674AD4 /* Sticker.swift in Sources */,
 				9040A6271FAE741200D89A53 /* AppDelegate.swift in Sources */,
 				CAD2E66C2273FD0D001BF5AF /* DetailViewCell.swift in Sources */,
+				CAF10F51229F8F9300674AD4 /* WebPManager.swift in Sources */,
+				CAF10F4D229F8F7A00674AD4 /* ImageData.swift in Sources */,
+				CAF10F41229F8F3C00674AD4 /* YYSpriteSheetImage.m in Sources */,
+				CAF10F40229F8F3C00674AD4 /* YYImageCoder.m in Sources */,
+				CAF10F4F229F8F8700674AD4 /* Interoperability.swift in Sources */,
 				9040A6551FAE7A6600D89A53 /* CollectionViewCell.swift in Sources */,
+				CAF10F3F229F8F3C00674AD4 /* YYFrameImage.m in Sources */,
+				CAF10F49229F8F6100674AD4 /* StickerPack.swift in Sources */,
 				CAD2E66E22740628001BF5AF /* EstickerItem.swift in Sources */,
 				CAD2CC0921E8337D00B7B829 /* DetailViewController.swift in Sources */,
+				CAF10F42229F8F3C00674AD4 /* YYAnimatedImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,12 +526,15 @@
 			baseConfigurationReference = 1BE2DAA3AA979787D1539537 /* Pods-WhatsApp Estickers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = "WhatsApp Estickers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whatsappestickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhatsApp Estickers/WhatsApp Estickers-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -543,12 +545,14 @@
 			baseConfigurationReference = 981FE7D92076828217CECC01 /* Pods-WhatsApp Estickers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = "WhatsApp Estickers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whatsappestickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhatsApp Estickers/WhatsApp Estickers-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -556,7 +560,6 @@
 		};
 		9040A64F1FAE741300D89A53 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F69F3FC462BD32AC8F0B67EA /* Pods-WhatsApp EstickersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -574,7 +577,6 @@
 		};
 		9040A6501FAE741300D89A53 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 762BEEEE11655DE1283BA881 /* Pods-WhatsApp EstickersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -592,7 +594,6 @@
 		};
 		9040A6521FAE741300D89A53 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5561B4FB0EF1B23680C1924B /* Pods-WhatsApp EstickersUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -609,7 +610,6 @@
 		};
 		9040A6531FAE741300D89A53 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7B9C27265E81FDD5F3ED786 /* Pods-WhatsApp EstickersUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
