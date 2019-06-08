@@ -1,3 +1,21 @@
-PODFILE CHECKSUM: e02382f9ab9cac87423ab577f8c3dfc3beeaac98
+PODS:
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYImage/WebP (1.0.4):
+    - YYImage/Core
 
-COCOAPODS: 1.7.0
+DEPENDENCIES:
+  - YYImage
+  - YYImage/WebP
+
+SPEC REPOS:
+  trunk:
+    - YYImage
+
+SPEC CHECKSUMS:
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+
+PODFILE CHECKSUM: afe046eb9cdac87c6b4c4d43a1f3e4e0baec4b95
+
+COCOAPODS: 1.8.4

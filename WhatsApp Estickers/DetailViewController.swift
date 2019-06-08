@@ -12,23 +12,28 @@ class DetailViewController: UIViewController, UICollectionViewDelegateFlowLayout
     
     @IBOutlet weak var mCollectionView: UICollectionView!
     
+    var stickerPacks: [StickerPack]!
     
-    let estickers: [EstickerItem] = [EstickerItem(imageUrl: "Barcelona"),
-                                     EstickerItem(imageUrl: "Barcelona"),
-                                     EstickerItem(imageUrl: "Barcelona"),
-                                     EstickerItem(imageUrl: "Barcelona"),
-                                     EstickerItem(imageUrl: "Barcelona"),
-                                     EstickerItem(imageUrl: "Barcelona"),
-                                     EstickerItem(imageUrl: "Barcelona")
-    ]
+    
+    var stickers: [Sticker] = []
+
+    
+    override func viewDidAppear(_ animated: Bool) {
+        fetchStickerPacks()
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return estickers.count
+        if stickerPacks?.isEmpty == false {
+            return stickerPacks[0].stickers.count
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "detailCell", for: indexPath) as! DetailViewCell
-        cell.mImage.image = UIImage(named: estickers[indexPath.row].imageUrl)
+        if stickerPacks?.isEmpty == false {
+            cell.mImage.image = stickerPacks[0].stickers[indexPath.row].imageData.image
+        }
         return cell
     }
     
@@ -52,15 +57,46 @@ class DetailViewController: UIViewController, UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
+    
+    @IBAction func addToWhatsApp(_ sender: Any) {
+        stickerPacks[0].sendToWhatsApp { result in
+            let yes: UIAlertController = UIAlertController(title: "Success", message: "\n\n", preferredStyle: .alert)
+            if result {
+                self.present(yes, animated: true, completion: nil)
+
+            }
 
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+            
+            
+        }
+        
+        
     }
     
-
+    private func fetchStickerPacks() {
+        let loadingAlert: UIAlertController = UIAlertController(title: "Loading sticker packs", message: "\n\n", preferredStyle: .alert)
+        loadingAlert.addSpinner()
+        present(loadingAlert, animated: true, completion: nil)
+        
+        do {
+            try StickerPackManager.fetchStickerPacks(fromJSON: StickerPackManager.stickersJSON(contentsOfFile: "sticker_packs")) { stickerPacks in
+                print("josue1")
+                
+                loadingAlert.dismiss(animated: false, completion: {
+                    print("josue")
+                    self.navigationController?.navigationBar.alpha = 1.0;
+                    self.stickerPacks = stickerPacks
+                    self.mCollectionView.reloadData()
+                })
+            }
+        } catch StickerPackError.fileNotFound {
+            fatalError("sticker_packs.wasticker not found.")
+        } catch {
+            fatalError(error.localizedDescription)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

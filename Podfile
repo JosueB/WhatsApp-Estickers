@@ -6,6 +6,6 @@ target 'WhatsApp Estickers' do
   use_frameworks!
 
   # Pods for WhatsApp Estickers
-
-
+  pod 'YYImage'
+  pod 'YYImage/WebP'
 end

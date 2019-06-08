@@ -1,5 +1,13 @@
 //
-//  Use this file to import your target's public headers that you would like to expose to Swift.
+//  WhatsApp Estickers-Bridging-Header.h
+//  WhatsApp Estickers
+//
+//  Created by Josue on 11/15/19.
+//  Copyright © 2019 Riley Norris. All rights reserved.
 //
 
-#import "YYImage.h"
+#ifndef WhatsApp_Estickers_Bridging_Header_h
+#define WhatsApp_Estickers_Bridging_Header_h
+
+
+#endif /* WhatsApp_Estickers_Bridging_Header_h */

@@ -161,12 +161,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/iOS-WebP/iOS_WebP.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/iOS-WebP/iOS_WebP.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
