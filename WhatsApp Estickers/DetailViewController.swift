@@ -60,18 +60,17 @@ class DetailViewController: UIViewController, UICollectionViewDelegateFlowLayout
     
     @IBAction func addToWhatsApp(_ sender: Any) {
         stickerPacks[0].sendToWhatsApp { result in
-            let yes: UIAlertController = UIAlertController(title: "Success", message: "\n\n", preferredStyle: .alert)
+            let yes: UIAlertController = UIAlertController(
+                title: "Success", message: "We have sent your new stickers to WhatsApp, enjoy them ;)", preferredStyle: .alert
+            )
+            yes.addAction(UIAlertAction(title: "Okay", style: .default, handler: { _ in
+                NSLog("Josue", "Done")
+                
+            }))
             if result {
                 self.present(yes, animated: true, completion: nil)
-
             }
-
-
-            
-            
         }
-        
-        
     }
     
     private func fetchStickerPacks() {
